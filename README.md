@@ -1,10 +1,6 @@
-<p align='center'>
-    <font size='6'>
-        <u>
-            <strong>::__Indice__::</strong>
-        </u>
-    </font>
-</p>
+<h1 align='center'>
+    <strong>::__Indice__::</strong>
+</h1>
 
 - :pencil2: Descripción
 - :zap: Utilización
@@ -13,13 +9,9 @@
 
 ---
 
-<p align='center' id='pte'>
-    <font size='6'>
-        <u>
-            <strong>💻 Principales tecnologías empleadas</strong>
-        </u>
-    </font>
-</p>
+<h1 align='center' id='pte'>
+    <strong>💻 Principales tecnologías empleadas</strong>
+</h1>
 
 <div align='center'>
     <table>
@@ -57,13 +49,9 @@
 
 ---
 
-<p align='center' id='ri'>
-    <font size='6'>
-        <u>
-            <strong>📝 Recursos de interes</strong>
-        </u>
-    </font>
-</p>
+<h1 align='center' id='ri'>
+        <strong>📝 Recursos de interes</strong>
+</h1>
 
 - Servicios web interesantes:
     * https://vercel.com (Hosting)
