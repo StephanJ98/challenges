@@ -17,13 +17,10 @@
     <table>
         <tr>
             <td>
-                <a href='https://developer.mozilla.org/en-US/docs/Web/HTML'>HTML</a>
+                <a href='https://www.learn-html.org/'>HTML & CSS</a>
             </td>
             <td>
-                <a href='https://developer.mozilla.org/en-US/docs/Web/css'>CSS</a>
-            </td>
-            <td>
-                <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript'>JavaScript</a>
+                <a href='https://www.learn-js.org/'>JavaScript</a>
             </td>
             <td>
                 <a href='https://www.typescriptlang.org/'>TypeScript</a>
