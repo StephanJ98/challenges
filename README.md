@@ -63,7 +63,6 @@
     * https://capacitorjs.com (iOS, Android, PWA)
     * https://stripe.com/docs (Para implentar formas de pago)
 - Tutoriales interesantes:
-    * https://learnjavascript.online
     * https://react-tutorial.app
     * https://learngitbranching.js.org
 - Enlaces interesantes para trabajar con React:
