@@ -5,6 +5,7 @@
 - [:zap: Utilización](#util)
 - [:computer: Principales tecnologías empleadas](#pte)
 - [:pencil: Recursos de interes](#ri)
+- [:art: Extensiones VSCode Recomendadas](#reco)
 
 ---
 
@@ -91,3 +92,15 @@
 - TypeScript:
     * https://www.typescriptlang.org/docs
     * https://www.typescripttutorial.net 
+
+---
+
+<h1 align='center' id='reco'>
+    <strong>🎨 Extensiones VSCode Recomendadas</strong>
+</h1>
+
+- dsznajder.es7-react-js-snippets
+- dbaeumer.vscode-eslint
+- ritwickdey.LiveServer
+- bradlc.vscode-tailwindcss
+
