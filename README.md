@@ -2,10 +2,19 @@
     <strong>::__Indice__::</strong>
 </h1>
 
-- :pencil2: Descripción
-- :zap: Utilización
+- [:zap: Utilización](#util)
 - [:computer: Principales tecnologías empleadas](#pte)
 - [:pencil: Recursos de interes](#ri)
+
+---
+
+<h1 align='center' id='util'>
+    <strong>⚡ Utilización</strong>
+</h1>
+
+*Se añadirán carpetas en el directorio raíz en las que habrá un ejercicio o mini proyecto a realizar, basándose en una documentación proporcionada. Para realizar las entregas, será necesario hacer un fork del repositorio y luego crear una pull request para cada entrega en este mismo repositorio.*
+
+<pre align='center'>Después de un período de tiempo variable, se publicará una posible solución.</pre>
 
 ---
 
