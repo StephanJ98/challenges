@@ -8,8 +8,8 @@
 
 ---
 
-|[Challenge_1](https://github.com/StephanJ98/challenges/tree/main/challenge_1)|
-|-|
+|[Challenge_1](https://github.com/StephanJ98/challenges/tree/main/challenge_1)|[Challenge_2](https://github.com/StephanJ98/challenges/tree/main/challenge_2)|
+|-|-|
 
 ---
 
