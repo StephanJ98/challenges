@@ -12,6 +12,24 @@
 |[Challenge_1](https://github.com/StephanJ98/challenges/tree/main/challenge_1)|[Challenge_2](https://github.com/StephanJ98/challenges/tree/main/challenge_2)|[Challenge_3](https://github.com/StephanJ98/challenges/tree/main/challenge_3)|
 |-|-|-|
 
+<table>
+    <tr>
+        <th>
+            <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_1">Challenge_1</a>
+        </th>
+        <th>
+            <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_2">Challenge_2</a>
+        </th>
+        <th>
+            <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_3">Challenge_3</a>
+        </th>
+        <th>
+            <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_4">Challenge_4</a>
+        </th>
+    </tr>
+</table>
+
+
 ---
 
 <h1 align='center' id='util'>
@@ -74,7 +92,6 @@
     * https://firebase.google.com (Un poco todo a la vez)
 - Herramientas interesantes:
     * https://astro.build
-    * https://www.which-ui.com
     * https://capacitorjs.com (iOS, Android, PWA)
     * https://stripe.com/docs (Para implentar formas de pago)
 - Tutoriales interesantes:
