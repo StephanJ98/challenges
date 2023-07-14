@@ -2,7 +2,7 @@
 
 > **Es necesario tener instalado NodeJS.** Ver [Web de NodeJS (Recomendado)](https://nodejs.org/en), o si quereis tener varias versiones de NodeJs simultaneas [NVM Linux](https://github.com/nvm-sh/nvm) o [NVM Windows](https://github.com/coreybutler/nvm-windows).
 
-Dado el código siguiente, completarlo para que la función `encryptPhrase` sea funcional.
+Dado el código siguiente, completarlo para que la función `encryptPhrase` sea funcional. No se puede usar los bucles `for` como el empleado en `decryptPhrase`.
 
 ```javascript
 const salt = new Date().getTime() % Math.round(Math.random() * 50)
