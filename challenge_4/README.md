@@ -1,50 +1,180 @@
-# Creación de un FrontEnd con Vite + React
+# Fundamentos de JavaScript: Tomando decisiones.
 
-> **Es necesario tener instalado NodeJS.** Ver [Web de NodeJS (Recomendado)](https://nodejs.org/en), o si quereis tener varias versiones de NodeJs simultaneas [NVM Linux](https://github.com/nvm-sh/nvm) o [NVM Windows](https://github.com/coreybutler/nvm-windows).
+![Image](js-decisions.png)
+> Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
 
-***Seguir las siguientes instrucciónes para instalar correctamente las herramientas necesarias.***
+## Un breve resumen sobre los booleanos.
 
-1. **Que es y como instalar `pnpm` ?**
-    1. ***Que  es `pnpm`?***
-        
-        [PNPM](https://pnpm.io/es) es una herramienta de gestión de paquetes que se utiliza para administrar las dependencias de un proyecto. PNPM significa "Plug'n'Play Package Manager" (Administrador de paquetes Plug'n'Play) y es una alternativa a otras herramientas populares como npm (Node Package Manager) y Yarn.
-    2. ***Alternativas***
-    
-        Algunas alternativas son el manejador de maquetes por defecto de Node (NPM) que viene instalado con Node. O [YARN](https://yarnpkg.com).
+Los booleanos solo pueden tener dos valores: `true` o `false`. Los booleanos ayudan a tomar decisiones sobre qué líneas de código deben ejecutarse cuando se cumplen ciertas condiciones.
 
-        Usan sintaxis y comandos similares entre ellos pero con ciertas diferencias. Por defecto se usara `pnpm`.
+Establece tu booleano como verdadero o falso de la siguiente manera:
 
-    3. ***Instalación***
+`let myTrueBool = true`
+`let myFalseBool = false`
 
-        Podeis seguir la guía que propone `PNPM` en su [web oficial](https://pnpm.io/es/installation).
-2. **Que es y como utilizar `Vite` ?**
-    1. ***Que es `Vite` ?***
+✅ Los booleanos reciben su nombre en honor al matemático, filósofo y lógico inglés George Boole (1815-1864).
 
-        [Vite](https://es.vitejs.dev) (palabra en francés para "rápido", pronunciado como /vit/) es una herramienta de compilación que tiene como objetivo proporcionar una experiencia de desarrollo más rápida y ágil para proyectos web modernos. Consta de dos partes principales:
+## Operadores de comparación y booleanos.
 
-        - Un servidor de desarrollo que proporciona mejoras enriquecidas de funcionalidades sobre módulos ES nativos, por ejemplo Hot Module Replacement (HMR) extremadamente rápido.
+Los operadores se utilizan para evaluar condiciones mediante comparaciones que generarán un valor booleano. A continuación se muestra una lista de operadores que se utilizan con frecuencia.
 
-        - Un comando de compilación que empaqueta tu código con [Rollup](https://rollupjs.org), preconfigurado para generar recursos estáticos altamente optimizados para producción.
-    
-    2. ***Utilización***
+| Símbolo | Descripción                                                                                                                                                  | Ejemplo            |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| `<`    | **Less than**: Compara dos valores y devuelve el tipo de dato booleano `true` si el valor del lado izquierdo es menor que el de la derecha.                              | `5 < 6 // true`    |
+| `<=`   | **Less than or equal to**: Compara dos valores y devuelve el tipo de dato booleano `true` si el valor del lado izquierdo es menor o igual que el de la derecha.      | `5 <= 6 // true`   |
+| `>`    | **Greater than**: Compara dos valores y devuelve el tipo de dato booleano `true` si el valor del lado izquierdo es mayor que el de la derecha.                         | `5 > 6 // false`   |
+| `>=`   | **Greater than or equal to**: Compara dos valores y devuelve el tipo de dato booleano `true` si el valor del lado izquierdo es mayor o igual que el de la derecha. | `5 >= 6 // false`  |
+| `==`  | **Eequality**: Compara dos valores y devuelve el tipo de dato booleano `true` si los valores del lado izquierdo y derecho son iguales.      | `5 == 6 // false` |
+| `!=`  | **Inequality**: Compara dos valores y devuelve el valor booleano opuesto al que devolvería el operador de igualdad.                                    | `5 != 6 // true`  |
+| `===`  | **Strict equality**: Compara dos valores y devuelve el tipo de dato booleano `true` si los valores del lado izquierdo y derecho son iguales y del mismo tipo de dato.       | `5 === 6 // false` |
+| `!==`  | **Inequality**: Compara dos valores y devuelve el valor booleano opuesto al que devolvería el operador de igualdad estricta.                                    | `5 !== 6 // true`  |
 
-        Podeis seguir la guía que propone `Vite` en su [web oficial](https://es.vitejs.dev/guide/#monta-tu-primer-proyecto-vite).
 
-        O seguir estos pasos rapidos:
+## Declaración "if".
 
-        1. Ejecutar el comando `pnpm create vite`.
-            1. Se pedira un nombre de proyecto. En esta caso de ejemplo usaremos `task_1`.
-            2. Se pedira un framework. En este caso de ejemplo usaremos `React`. Y en la variante usaremos `JavaScript`.
-            3. Una vez terminada la configuración se mostrara por el cmd el mensaje siguente con algunos comandos que ejecutaremos.
+La declaración "if" ejecutará el código dentro de sus bloques si la condición es verdadera.
 
-            ```
-            Done. Now run:
+```javascript
+if (condition){
+    //Condition is true. Code in this block will run.
+}
+```
 
-                cd task_1
-                pnpm install
-                pnpm run dev
-            ```
-            4. El comando `cd task_1` para entrar en la carpeta de nuestro proyecto.
-            5. El comando `pnpm install` instalara todos los paquetes necesarios para el funcionamiento de nuestro proyecto. Cronstruira la carpeta `node_modules`, que contiene todas nuestras dependencias.
-            6. El comando `pnpm run dev` o `pnpm dev` lanzara un servidor de desarrollo para nuestro proyecto.
+Los operadores lógicos se utilizan con frecuencia para formar la condición.
 
+```javascript
+let currentMoney;
+let laptopPrice;
+
+if (currentMoney >= laptopPrice){
+    //Condition is true. Code in this block will run.
+    console.log("¡Consiguiendo un nuevo pc!");
+}
+```
+
+## Declaración If..Else
+
+La declaración `else` ejecutará el código dentro de sus bloques cuando la condición sea falsa. Es opcional y se utiliza junto con una declaración `if`.
+
+```javascript
+let currentMoney;
+let laptopPrice;
+
+if (currentMoney >= laptopPrice){
+    //Condition is true. Code in this block will run.
+    console.log("¡Consiguiendo un nuevo pc!");
+}
+else{
+    //Condition is false. Code in this block will run.
+    console.log("¡Aún no puedo permitirme un nuevo pc!");
+}
+```
+
+## Declaración Switch
+
+La declaración `switch` se utiliza para realizar diferentes acciones basadas en diferentes condiciones. Se utiliza la declaración `switch` para seleccionar uno de los muchos bloques de código que se deben ejecutar.
+
+```javascript
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+
+```javascript
+// program using switch statement
+let a = 2;
+
+switch (a) {
+
+    case 1:
+        a = 'one';
+        break;
+    case 2:
+        a = 'two';
+        break;
+    default:
+        a = 'not found';
+        break;
+}
+console.log(`The value is ${a}`);
+```
+
+## Operadores lógicos y booleanos.
+
+Las decisiones pueden requerir más de una comparación y se pueden encadenar con operadores lógicos para producir un valor booleano.
+
+| Símbolo | Descripción                                                                                     | Ejemplo                                                                 |
+| ------ | ----------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| `&&`   | **AND**: Compara dos expresiones booleanas. Devuelve true **solo** si ambos lados son verdaderos. | `(5 > 6) && (5 < 6 ) //Returns false` |
+| `\|\|` | **OR**: Compara dos expresiones booleanas. Devuelve true si al menos uno de los lados es verdadero.     | `(5 > 6) \|\| (5 < 6) //Returns true` |
+| `!`    | **NOT**: Devuelve el valor opuesto de una expresión booleana.                             | `!(5 > 6) //Return true`         |
+
+## Condiciones y decisiones con operadores lógicos.
+
+Los operadores lógicos se pueden utilizar para formar condiciones en declaraciones if..else.
+
+```javascript
+let currentMoney;
+let laptopPrice;
+let laptopDiscountPrice = laptopPrice - (laptopPrice * .20) //Laptop price at 20 percent off
+
+if (currentMoney >= laptopPrice || currentMoney >= laptopDiscountPrice){
+    //Condition is true. Code in this block will run.
+    console.log("¡Consiguiendo un nuevo pc!");
+}
+else {
+    //Condition is true. Code in this block will run.
+    console.log("¡Aún no puedo permitirme un nuevo pc!");
+}
+```
+
+### Operador de negación.
+
+Hasta ahora has visto cómo se puede utilizar una declaración `if...else` para crear lógica condicional. Todo lo que se coloca en un `if` debe evaluarse como verdadero/falso. Al utilizar el operador `!`, puedes _negar_ la expresión. Se vería de la siguiente manera:
+
+```javascript
+if (!condition) {
+  // runs if condition is false
+} else {
+  // runs if condition is true
+}
+```
+
+### Expresiones ternarias.
+
+`if...else` no es la única forma de expresar la lógica de decisiones. También puedes usar algo llamado operador ternario. La sintaxis para ello se ve así:
+
+```javascript
+let variable = condition ? <return this if true> : <return this if false>
+```
+
+He aquí un ejemplo más tangible:
+
+```javascript
+let firstNumber = 20;
+let secondNumber = 10
+let biggestNumber = firstNumber > secondNumber ? firstNumber: secondNumber;
+```
+
+Lo anterior establece que
+- si `firstNumber` es mayor que` secondNumber`
+- luego asigne `firstNumber` a` itNumber`
+- de lo contrario, asigne 'segundo número'.
+  
+La expresión ternaria es solo una forma compacta de escribir el siguiente código:
+
+```javascript
+let biggestNumber;
+if (firstNumber > secondNumber) {
+  biggestNumber = firstNumber;
+} else {
+  biggestNumber = secondNumber;
+}
+```
