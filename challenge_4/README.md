@@ -24,7 +24,7 @@ Los operadores se utilizan para evaluar condiciones mediante comparaciones que g
 | `<=`   | **Less than or equal to**: Compara dos valores y devuelve el tipo de dato booleano `true` si el valor del lado izquierdo es menor o igual que el de la derecha.      | `5 <= 6 // true`   |
 | `>`    | **Greater than**: Compara dos valores y devuelve el tipo de dato booleano `true` si el valor del lado izquierdo es mayor que el de la derecha.                         | `5 > 6 // false`   |
 | `>=`   | **Greater than or equal to**: Compara dos valores y devuelve el tipo de dato booleano `true` si el valor del lado izquierdo es mayor o igual que el de la derecha. | `5 >= 6 // false`  |
-| `==`  | **Eequality**: Compara dos valores y devuelve el tipo de dato booleano `true` si los valores del lado izquierdo y derecho son iguales.      | `5 == 6 // false` |
+| `==`  | **Equality**: Compara dos valores y devuelve el tipo de dato booleano `true` si los valores del lado izquierdo y derecho son iguales.      | `5 == 6 // false` |
 | `!=`  | **Inequality**: Compara dos valores y devuelve el valor booleano opuesto al que devolvería el operador de igualdad.                                    | `5 != 6 // true`  |
 | `===`  | **Strict equality**: Compara dos valores y devuelve el tipo de dato booleano `true` si los valores del lado izquierdo y derecho son iguales y del mismo tipo de dato.       | `5 === 6 // false` |
 | `!==`  | **Inequality**: Compara dos valores y devuelve el valor booleano opuesto al que devolvería el operador de igualdad estricta.                                    | `5 !== 6 // true`  |
