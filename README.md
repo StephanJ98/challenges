@@ -11,6 +11,7 @@
 
 ---
 
+<div align='center'>
 <table>
     <tr>
         <th>
@@ -25,17 +26,17 @@
         <th>
             <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_3">Challenge_3</a>
         </th>
-    </tr>
-    <tr>
         <th>
             <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_4">Challenge_4</a>
         </th>
+    </tr>
+    <tr>
         <th>
             <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_5">Challenge_5</a>
         </th>
     </tr>
 </table>
-
+</div>
 
 ---
 
