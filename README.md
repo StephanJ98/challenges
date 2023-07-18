@@ -12,6 +12,9 @@
 <table>
     <tr>
         <th>
+            <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_0">✨Challenge_0 Git ✨</a>
+        </th>
+        <th>
             <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_1">Challenge_1</a>
         </th>
         <th>
@@ -20,6 +23,8 @@
         <th>
             <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_3">Challenge_3</a>
         </th>
+    </tr>
+    <tr>
         <th>
             <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_4">Challenge_4</a>
         </th>
