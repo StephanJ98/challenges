@@ -191,7 +191,6 @@ Es importante tener en cuenta que, aunque es posible mantener actualizado tu for
     * https://firebase.google.com (Hosting BackEnd)
     * https://www.mongodb.com (Hosting BD NoSQL)
     * https://planetscale.com (Hosting BD SQL)
-    * https://firebase.google.com (Un poco todo a la vez)
 - Herramientas interesantes:
     * https://astro.build
     * https://capacitorjs.com (iOS, Android, PWA)
