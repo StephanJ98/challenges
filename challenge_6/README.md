@@ -405,6 +405,6 @@ Para esto cambiaremos los fichero para obtener el siguiente resultado:
     ```
 
 ### Resultado de la Fase 2
-    ![Resultado de la Fase 2](res-F2.png)
+![Resultado de la Fase 2](res-F2.png)
 
 ## Fase 3: Publicación (24/07 - 26/07)
