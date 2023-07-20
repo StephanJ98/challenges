@@ -1,8 +1,13 @@
 import styles from './styles.module.css'
 
-const Button = ({ value }) => {
+const Button = ({ value, action }) => {
     return (
-        <div className={value === 'CALC' ? `${styles.btns} ${styles.calc}` : styles.btns}>{value}</div>
+        <div
+            className={styles.btns}
+            onClick={() => action()}
+        >
+            {value}
+        </div>
     )
 }
 
