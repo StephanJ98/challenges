@@ -408,3 +408,30 @@ Para esto cambiaremos los fichero para obtener el siguiente resultado:
     ![Resultado de la Fase 2](res-F2.png)
 
 ## Fase 3: Publicación (24/07 - 26/07)
+
+Ahora que la aplicación esta en una fase en la que es posible pasarla en producción, la publicaremos gracias a un servicio de [Vercel](https://vercel.com) un [PasS](https://en.wikipedia.org/wiki/Platform_as_a_service). Nos permitira mantener nuestras aplicación y publicarlas bajo una URL. Además son los desarrolladores de [NextJs](https://nextjs.org) que veremos en un futuro, y son unos de los principales promotores del ecosistema JS.
+
+La publicación como tal es muy simple bastara con seguir los siguientes pasos.
+
+1. Crear una cuenta en [Vercel](https://vercel.com).
+    > Lo más facil es linkearlo con nuestra cuenta GitHub.
+2. Una vez la cuenta creada vamos a nuestro [Dashboard](https://vercel.com/dashboard) que sera nuestra página principal en Vercel.
+3. Buscaremos el boton desplegable `Add New...`, y elegiremos la opción `Project`.
+4. Nos redigira a una nueva página donde nos muestra algunos proyectos de nuestro GitHub que podemos importar. Elegimos `challenges` y pulsamos en `Import`.
+5. Nos mostrara la página de configuración. 
+
+    En el campo `Project Name` pondremos algo como `challenges-calc`, ya que en la carpeta challenges hay otros proyectos que podrían ser publicados.
+
+    > ***:rotating_light: Aqui tenemos que tener cuidado.*** En un proyecto normal no seria necesario, pero como aqui tenemos varias carpetas con varios proyectos dentro hay que indicarle a cual nos referimos. Asi que en campo `Root Directory` pulsaremos en `Edit` y navegaremos hasta `challenge_6/calculadora`. Vercel ya detecta nuestra configuración y aplica los cambios necesarios en sus metodos y configuraciones.
+
+    Cuando todo este configurado pulsamos en `Deploy`.
+
+6. Cuando se haya finalizado el Deploy nos aparecera un boton `Continue to Dashboard` lo pulsamos. Nos enviara a la página principal de nuestro proyecto.
+
+7. :sparkles: Nuestro proyecto ya esta publicado, en mi caso bajo la [URL](https://challenges-calc.vercel.app). La vuestra estara bajo otra URL ya que la de `challenges-calc` ya esta tomada :lock:.
+
+8. Como el proyecto esta guardado en nuestro GitHub, cada vez que enviemos un nuevo **Commit** sobre nuestra *rama principal* la versión publicada por vercel se actualizara para contener los cambios del **Commit** automaticamente.
+
+---
+
+# :tada::tada::tada: Felicidades tu primer proyecto esta ***"acabado"*** y publicado
