@@ -13,3 +13,7 @@ El trabajo a realizar en esta entrega sera implementar las siguientes funcionali
 - Cuando se produzca un error en un calculo, mostrarlo por el `Display` en lugar de mostrarlo solo por consola.
 - Hacer que se puedan utilizar los botones numericos y de las operaciones validas (+,-,*,/).
 - Permitir el uso de ` ( ` y ` ) `.
+
+# :sparkles: :rocket: Resultado final
+
+![Resultado final](image.png)
