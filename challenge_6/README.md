@@ -218,6 +218,23 @@ En esta fase crearemos la estética de nuestra aplicación.
     }
     ```
 
+11. Dentro de ``src\App.jsx`` ponemos el siguiente código.
+
+    ```jsx
+    import Body from "./components/Body"
+
+    function App() {
+
+    return (
+        <Body />
+    )
+    }
+
+    export default App
+    ```
+
+    > Además podemos borrar el archivo ``src\App.css`` ya que no se usa.
+
 ## Fase 2: Creación de las funcionalidades (22/07 - 24/07)
 
 Retomaremos el desarrollo donde lo hemos dejado en la [Fase 1](#fase-1-creación-de-la-estética-2007---2207). En esta fase nos centraremos en finalizar nuestra aplicación, para ello tenemos que añadir las funcionalidades de los botones, la realización de los calculos y de mostrar el resultado.
