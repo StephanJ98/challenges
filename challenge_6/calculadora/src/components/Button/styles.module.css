@@ -1,8 +1,15 @@
+@font-face {
+    font-family: monofonto;
+    src: url(../../assets/fonts/monofonto/monofonto.otf);
+}
+
 .btns {
     background-color: gainsboro;
     border-radius: 1rem;
     padding: 1rem;
     box-shadow: 3px 3px gray;
+    font-weight: 700;
+    font-family: monofonto;
 }
 
 .btns:hover {
