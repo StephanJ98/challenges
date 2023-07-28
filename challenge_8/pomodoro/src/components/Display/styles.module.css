@@ -1,0 +1,53 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: auto;
+    align-items: center;
+}
+
+.timer {
+    border: 0.5rem solid gray;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    font-size: 4rem;
+    z-index: 5;
+}
+
+.cicleCounter {
+    border-bottom: 0;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: gray;
+    padding: 1rem;
+    color: gainsboro;
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.cicleCounter::before {
+    content: ' ';
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: -2rem;
+    border-radius: 50%;
+    box-shadow: 1rem 1rem gray;
+    z-index: 1;
+}
+
+.cicleCounter::after {
+    content: ' ';
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    right: -2rem;
+    border-radius: 50%;
+    box-shadow: -1rem 1rem gray;
+    z-index: 1;
+}

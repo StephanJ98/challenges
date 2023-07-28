@@ -72,3 +72,7 @@ La estructura de la aplicación es libre, y los estilos aplicados tambien. Solo 
     > **Consejo:** Optad por cosas simples y que os resulten faciles de usar y sean visualmente agradables.
 - UI responsive. Esto es si varia el tamaño de pantalla la distribución se debe adaptar.
 
+**Mejoras Futuras:**
+- Agregar sonidos de alerta al finalizar cada modo.
+- Permitir al usuario personalizar el intervalo de trabajo y descanso según sus preferencias.
+- Implementar un historial para que el usuario pueda ver cuántos ciclos de trabajo completó en una sesión.

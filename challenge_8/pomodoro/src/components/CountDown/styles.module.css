@@ -1,0 +1,150 @@
+:root {
+    --border-size: 4rem;
+}
+
+.container {
+    width: 100%;
+    background-color: gainsboro;
+    overflow: hidden;
+}
+
+.band {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    padding: 2rem;
+    margin: 0 2rem 0 2rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.band::before {
+    content: ' ';
+    background-color: transparent;
+    position: absolute;
+    width: var(--border-size);
+    height: var(--border-size);
+    top: 0;
+    left: calc(var(--border-size) * -1);
+    border-radius: var(--border-size);
+    box-shadow: calc(var(--border-size) / 2) calc((var(--border-size) * -1) / 2) 0 0 gray;
+}
+
+.band::after {
+    content: ' ';
+    background-color: transparent;
+    position: absolute;
+    width: var(--border-size);
+    height: var(--border-size);
+    top: 0;
+    right: calc(var(--border-size) * -1);
+    border-radius: var(--border-size);
+    box-shadow: calc((var(--border-size) * -1) / 2) calc((var(--border-size) * -1) / 2) 0 0 gray;
+    z-index: 1;
+}
+
+.band>p {
+    z-index: 3;
+    text-align: center;
+}
+
+.progressContainer {
+    background-color: #919191;
+    width: calc(100% - 2rem);
+    height: 2rem;
+    left: 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: 2;
+    border: 1px solid #464646;
+    box-shadow: 1px 1px 5px #464646;
+}
+
+.progress {
+    position: absolute;
+    border-radius: 0.5rem;
+    background-color: gainsboro;
+    max-width: calc(100% - 2rem);
+    width: calc(0% - 2rem);
+    height: 2rem;
+    z-index: 2;
+}
+
+.phase {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.phaseString {
+    background-color: gray;
+    padding: 0 1rem 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: relative;
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .phaseString {
+        flex-direction: column;
+        gap: 0.75rem;
+        justify-content: center;
+    }
+}
+
+.active {
+    background-color: green;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    flex: auto;
+}
+
+.rest {
+    background-color: yellow;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    flex: auto;
+}
+
+.exitBtn {
+    flex: 1;
+    background-color: red;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.phaseString::before {
+    content: ' ';
+    background-color: transparent;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    left: calc(2rem * -1);
+    border-radius: 2rem;
+    box-shadow: calc(2rem / 2) calc((2rem * -1) / 2) 0 0 gray;
+}
+
+.phaseString::after {
+    content: ' ';
+    background-color: transparent;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    top: 0;
+    right: calc(2rem * -1);
+    border-radius: 2rem;
+    box-shadow: calc((2rem * -1) / 2) calc((2rem * -1) / 2) 0 0 gray;
+    z-index: 1;
+}
