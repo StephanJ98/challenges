@@ -29,19 +29,18 @@ pnpm dev
    - El contador se actualiza en tiempo real durante el modo "Trabajo" o "Descanso".
 
 3. **Control del Temporizador:**
-   - Hay tres botones de control: "Iniciar", "Pausar" y "Reiniciar".
+   - Hay dos  botones de control: `Iniciar` y `Exit`.
    - Al hacer clic en "Iniciar", se inicia el temporizador y comienza el modo "Trabajo".
-   - Si el temporizador está en pausa, el botón "Iniciar" se convierte en "Reanudar" y se puede hacer clic para continuar el temporizador.
-   - El botón "Pausar" detiene el temporizador y permite reanudarlo desde el punto donde se detuvo.
-   - El botón "Reiniciar" restablece el temporizador al modo "Trabajo" con la duración predeterminada.
+   - El botón "Exit" restablece el temporizador al modo "Trabajo" y recarga la página.
 
 4. **Notificación de Cambio de Modo:**
-   - Cuando la aplicación cambia del modo "Trabajo" al modo "Descanso" y viceversa, se muestra una notificación en la pantalla.
+   - Cuando la aplicación cambia del modo "Trabajo" al modo "Descanso" y viceversa, se muestra una notificación en la pantalla. (Opcional)
+   - Cuando la aplicación cambia del modo "Descanso" al modo "Trabajo" se aumenta un contador que se muestra por pantalla.
 
 5. **Personalización de la Duración:**
    - El usuario puede personalizar la duración del modo "Trabajo" y del modo "Descanso".
    - Hay dos campos de entrada donde el usuario puede ingresar los valores en minutos.
-   - Al hacer clic en el botón "Guardar", la duración se actualiza y se refleja en el temporizador.
+   - Al hacer clic en el botón "Iniciar", la duración se actualiza y se lanza en el temporizador.
 
 6. **Responsividad:**
    - La aplicación está diseñada para ser responsiva y funcionar correctamente en dispositivos móviles y pantallas de diferentes tamaños.
