@@ -3,6 +3,7 @@ import BtnInicio from "./components/BtnInicio"
 import Input from "./components/Input"
 import CountDown from './components/CountDown'
 import Display from './components/Display'
+import VideoPlayer from './components/VideoPlayer'
 
 function App() {
   const [launch, setLaunch] = useState(false)
@@ -43,6 +44,8 @@ function App() {
           activ={durActiv}
           rest={durRest}
         />
+
+        <VideoPlayer className='videoPlayer'/>
       </div>
     )
   )

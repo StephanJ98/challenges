@@ -34,6 +34,19 @@ body,
     z-index: auto;
 }
 
+.videoPlayer {
+    width: 420px;
+    height: 236px;
+    position: absolute;
+    top: 15%;
+    right: 2rem;
+}
+
+.videoPlayer> * {
+    width: 100%;
+    height: 100%;
+}
+
 @media only screen and (max-width: 600px) {
     .container {
         display: flex;
@@ -42,4 +55,13 @@ body,
         align-items: center;
         gap: 1rem;
     }
+
+    .videoPlayer {
+        position: relative;
+        margin: 1rem auto;
+        width: 99%;
+        top: auto;
+        right: auto;
+    }
+
 }
