@@ -33,7 +33,23 @@ Esta sección explicará la arquitectura general del sistema, destacando la comu
 La aplicación sigue una arquitectura de cliente-servidor, donde el front-end desarrollado en React.js se comunicará con el back-end construido en Node.js con Express a través de solicitudes HTTP para obtener y enviar datos a la base de datos MongoDB.
 
 #### Diagrama de Arquitectura
-(Incluir un diagrama visual que muestre la estructura de la arquitectura, como la comunicación entre el cliente, el servidor y la base de datos.)
+
+```mermaid
+flowchart LR
+
+subgraph "Cliente (Front-end)"
+  A[Usuario] -->|Interfaz gráfica| B[Aplicación Web con React.Js]
+end
+
+subgraph "Servidor (Back-end)"
+  B -->|Solicitudes HTTP| D[Servidor Node.js con Express]
+  D -->|Respuestas HTTP| B
+end
+
+subgraph "Servidor DB"
+  D -->|Operaciones en la Base de Datos| F[Base de Datos MongoDB]
+end
+```
 
 ### 4. Funcionalidades Principales
 En esta sección, enumeraremos las principales funcionalidades de la aplicación y proporcionaremos detalles sobre su implementación.
