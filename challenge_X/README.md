@@ -100,7 +100,39 @@ En esta sección, proporcionaremos detalles sobre los componentes clave tanto de
 En esta sección, describiremos los flujos de trabajo clave de la aplicación, desde el registro de un usuario hasta la gestión de su colección de plantas.
 
 #### Diagrama de Flujo de Usuario
-(Inserta un diagrama que ilustre el flujo de trabajo de un usuario típico en la aplicación, desde el registro hasta las diversas acciones que puede realizar, como agregar plantas, editar información, etc.)
+
+```mermaid
+graph TD
+
+subgraph Registro e Inicio de Sesión
+  A[Usuario se registra] -->|Proporciona correo y contraseña| B[Sistema valida los datos y crea una cuenta]
+  B -->|Cuenta creada exitosamente| C[Usuario inicia sesión]
+end
+
+subgraph Búsqueda y Visualización de Plantas
+  C -->|Accede a página principal| D[Muestra lista de sus plantas]
+  D -->|Utiliza barra de búsqueda| E[Muestra plantas específicas]
+end
+
+subgraph Agregar, Editar y Eliminar Plantas
+  D -->|Clic en 'Agregar Planta'| F[Rellena formulario con detalles de la nueva planta]
+  F -->|Incluida la imagen| G[Planta agregada]
+  D -->|Selecciona planta existente| H[Muestra vista detallada de la planta]
+  H -->|Clic en 'Editar Planta'| I[Edita detalles de la planta]
+  I -->|Detalles actualizados| J[Planta editada]
+  H -->|Clic en 'Eliminar Planta'| K[Confirmación de eliminación]
+  K -->|Planta eliminada| L[Planta eliminada]
+end
+
+subgraph Cuidados de la Planta según su Especie
+  H -->|Clic en planta específica| M[Muestra información de cuidados]
+end
+
+subgraph Subida y Visualización de Imágenes de Plantas
+  F -->|Sube una imagen| N[Imagen almacenada en el servidor]
+  N -->|Mostrada junto a la información de la planta| O[Imagen visible]
+end
+```
 
 #### Descripción Paso a Paso de las Principales Funcionalidades
 1. Registro e Inicio de Sesión:
