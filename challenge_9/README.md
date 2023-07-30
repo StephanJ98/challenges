@@ -26,6 +26,9 @@ cd mi-proyecto-api
 pnpm init
 ```
 
+3. Crea un archivo `.gitignore` y añade la linea `node_modules`.
+    Esto hace que git no tenga en cuenta los archivos dentro de la carpeta `node_modules`.
+
 ## Paso 2: Configuración de package.json
 
 Mediante el comando `pnpm add nodemon` instalaremos el paquete `nodemon`.
