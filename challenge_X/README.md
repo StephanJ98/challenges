@@ -150,6 +150,78 @@ subgraph Subida y Visualización de Imágenes de Plantas
 end
 ```
 
+#### A continuación los diagramas de secuencia más detallados:
+
+1. Diagrama de secuencia del proceso de Registro e Inicio de Sesión:
+
+```mermaid
+sequenceDiagram
+    participant A as Usuario
+    participant B as Sistema
+    participant C as Usuario
+
+    A ->> B: Proporciona correo y contraseña
+    B -->> C: Cuenta creada exitosamente
+```
+
+2. Diagrama de secuencia del proceso de Búsqueda y Visualización de Plantas:
+
+```mermaid
+sequenceDiagram
+    participant C as Usuario
+    participant D as Sistema
+    participant E as Usuario
+
+    C ->> D: Accede a página principal
+    D ->> E: Muestra lista de sus plantas
+    E ->> D: Utiliza barra de búsqueda
+```
+
+3. Diagrama de secuencia del proceso de Agregar, Editar y Eliminar Plantas:
+
+```mermaid
+sequenceDiagram
+    participant D as Sistema
+    participant F as Usuario
+
+    D ->> F: Clic en 'Agregar Planta'
+    F ->> D: Rellena formulario con detalles de la nueva planta
+    F ->> D: Sube una imagen
+    D -->> F: Imagen almacenada en el servidor
+    D -->> D: Planta agregada
+
+    D ->> F: Selecciona planta existente
+    F ->> F: Clic en 'Editar Planta'
+    F -->> D: Detalles actualizados
+    D -->> F: Planta editada
+
+    F ->> F: Clic en 'Eliminar Planta'
+    F -->> D: Planta eliminada
+
+```
+
+4. Diagrama de secuencia del proceso de Cuidados de la Planta según su Especie:
+
+```mermaid
+sequenceDiagram
+    participant H as Usuario
+    participant M as Sistema
+
+    H ->> M: Clic en planta específica
+    M ->> H: Muestra la planta seleccionada
+```
+
+5. Diagrama de secuencia del proceso de Subida y Visualización de Imágenes de Plantas:
+
+```mermaid
+sequenceDiagram
+    participant F as Usuario
+    participant N as Sistema
+
+    F ->> N: Sube una imagen
+    N -->> F: Imagen visible
+```
+
 #### Descripción Paso a Paso de las Principales Funcionalidades
 1. Registro e Inicio de Sesión:
    - El usuario se registra proporcionando un correo electrónico y una contraseña.
