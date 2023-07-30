@@ -43,6 +43,14 @@
         <th>
             <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_8">Challenge_8</a>
         </th>
+        <th>
+            <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_9">Challenge_9</a>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <a href="https://github.com/StephanJ98/challenges/tree/main/challenge_X">✨Challenge_X✨</a>
+        </th>
     </tr>
 </table>
 </div>
