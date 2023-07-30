@@ -16,15 +16,15 @@ El público objetivo de la aplicación incluye a cualquier persona interesada en
 En esta sección, proporcionaremos instrucciones detalladas sobre cómo instalar la aplicación en un entorno de desarrollo o producción.
 
 #### Requisitos del Sistema
-- Node.js y npm instalados en el sistema.
+- Node.js y pnpm instalados en el sistema.
 - Navegador web moderno (por ejemplo, Chrome, Firefox, Edge).
 
 #### Guía de Instalación
 1. Clonar el repositorio desde GitHub: (enlace al repositorio)
-2. En la carpeta raíz, ejecutar el comando `npm install` para instalar las dependencias tanto para el front-end como el back-end.
+2. En la carpeta raíz, ejecutar el comando `pnpm i` para instalar las dependencias tanto para el front-end como el back-end.
 3. Configurar la conexión a la base de datos MongoDB en el archivo de configuración.
-4. Iniciar el servidor de desarrollo: `npm run dev`. Esto iniciará tanto el servidor back-end como el front-end.
-5. Acceder a la aplicación en el navegador: `http://localhost:3000`.
+4. Iniciar el servidor de desarrollo: `pnpm dev`. Esto iniciará tanto el servidor back-end como el front-end.
+5. Acceder a la aplicación en el navegador.
 
 ### 3. Arquitectura del Sistema
 Esta sección explicará la arquitectura general del sistema, destacando la comunicación entre el front-end y el back-end.
@@ -95,6 +95,11 @@ La base de datos estará en MongoDB y se diseñará con las siguientes coleccion
   - name (nombre de la planta)
   - species (especie de la planta)
   - description (descripción o notas sobre la planta)
+  - soil (tipo de suelo que prefiere la plnata)
+  - temperature (rango de temperaturas en las que vive)
+  - sun (tipo de exposición solar)
+  - water (frecuencia y cantidad de riego)
+  - multiplication (método y época de reproducción)
   - image_url (URL de la imagen de la planta)
   - created_at (fecha de creación de la planta)
   - updated_at (última fecha de actualización de los datos de la planta)
