@@ -116,6 +116,12 @@ En esta sección, proporcionaremos detalles sobre los componentes clave tanto de
 - La API manejará las solicitudes del cliente, accederá a la base de datos MongoDB y enviará las respuestas adecuadas al front-end.
 - Se implementará la autenticación mediante tokens JWT para proteger las rutas y asegurar que solo los usuarios autenticados puedan acceder a ciertas funcionalidades.
 
+> [Repositorio de la API](https://github.com/StephanJ98/AWAMP_API)
+
+> [URL de la API](https://awamp-api.vercel.app)
+
+> [Documentación de la API](https://github.com/StephanJ98/AWAMP_API/blob/main/README.md)
+
 ### 7. Flujo de Trabajo de la Aplicación
 En esta sección, describiremos los flujos de trabajo clave de la aplicación, desde el registro de un usuario hasta la gestión de su colección de plantas.
 
