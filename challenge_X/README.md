@@ -85,8 +85,6 @@ La base de datos estará en MongoDB y se diseñará con las siguientes coleccion
   - _id (clave primaria, generado automáticamente por MongoDB)
   - email (correo electrónico del usuario)
   - password (contraseña encriptada)
-  - created_at (fecha de registro del usuario)
-  - updated_at (última fecha de actualización de los datos del usuario)
 
 - Colección "plants":
   - _id (clave primaria, generado automáticamente por MongoDB)
@@ -100,8 +98,6 @@ La base de datos estará en MongoDB y se diseñará con las siguientes coleccion
   - water (frecuencia y cantidad de riego)
   - multiplication (método y época de reproducción)
   - image_url (URL de la imagen de la planta)
-  - created_at (fecha de creación de la planta)
-  - updated_at (última fecha de actualización de los datos de la planta)
 
 ### 6. Descripción de Componentes Clave
 En esta sección, proporcionaremos detalles sobre los componentes clave tanto del front-end como del back-end de la aplicación.
