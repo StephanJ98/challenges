@@ -17,7 +17,7 @@ En esta sección, proporcionaremos instrucciones detalladas sobre cómo instalar
 
 #### Requisitos del Sistema
 - Node.js y pnpm instalados en el sistema.
-- Navegador web moderno (por ejemplo, Chrome, Firefox, Edge).
+- Navegador web moderno (por ejemplo, Chrome, Firefox).
 
 #### Guía de Instalación
 1. Clonar el repositorio desde GitHub: (enlace al repositorio)
@@ -35,15 +35,14 @@ La aplicación sigue una arquitectura de cliente-servidor, donde el front-end de
 #### Diagrama de Arquitectura
 
 ```mermaid
-flowchart LR
+flowchart TD
 
 subgraph "Cliente (Front-end)"
   A[Usuario] -->|Interfaz gráfica| B[Aplicación Web con React.Js]
 end
 
 subgraph "Servidor (Back-end)"
-  B -->|Solicitudes HTTP| D[Servidor Node.js con Express]
-  D -->|Respuestas HTTP| B
+  B <-->|Solicitudes/Respuestas HTTP| D[Servidor Node.js con Express]
 end
 
 subgraph "Servidor DB"
